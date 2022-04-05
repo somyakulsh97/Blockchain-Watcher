@@ -7,6 +7,10 @@ infura_url = "https://kovan.infura.io/v3/2211055978ce412d8df670319d322f5a"
 web3 = Web3(Web3.HTTPProvider(infura_url))
 print(web3.isConnected())
 
+# Created three tables in mysql database with names as following:
+#1. Addresses for keeping account address
+#2. Blocks for keeping block data
+#3. Transactions for keeping transaction data
 def get_accounts():
     connection = connect_db()
     cursor = connection.cursor()
